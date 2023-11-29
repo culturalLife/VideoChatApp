@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* General styles for the container */
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Header styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Status message styles */
+h4 {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Button styles */
+/* Updated Button styles */
+button {
+  padding: 15px 30px; /* Larger padding for a larger button */
+  margin-top: 15px;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  border: none;
+  border-radius: 10px; /* Soft round the edges */
+  background-color: #87CEEB; /* Sky blue color */
+  color: #fff; /* White text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+
+  /* Transition for a smooth hover effect */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #5FA2D5; /* Lighten the color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a slightly larger shadow on hover */
+}
+
+
+/* Updated .myStreamBtn styles */
+.myStreamBtn {
+  padding: 15px 30px; /* Larger padding for a larger button */
+  margin-top: 15px;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  border: none;
+  border-radius: 10px; /* Soft round the edges */
+  background-color: #87CEEB; /* Sky blue color */
+  color: #fff; /* White text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+
+  /* Transition for a smooth hover effect */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.myStreamBtn:hover {
+  background-color: #5FA2D5; /* Lighten the color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a slightly larger shadow on hover */
+}
+
+
+/* Stream container styles */
+.streamContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Stream styles */
+.reactPlayer {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* Individual stream styles */
+.reactPlayer h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Adjust the size of the player */
+.reactPlayer video {
+  width: 100%;
+  height: 100%;
+}
